@@ -44,3 +44,9 @@ Se plantearón las siguientes preguntas para guiar el analisis. Pensando como el
 3. ¿Qué tan mejores son los jugadores más valiosos?
 ![Untitled (11)](https://github.com/Cseudave/fifa21_cleaning/assets/123985830/bbfae8ed-a308-4ce7-858e-0b2e921e3c8c)
 
+## Implementación de modelo
+Imagina que quieres ser un futbolista profesional y enfocarte en cierta estadística como movilidad, ¿Cuánto sería tu valor según tus aptitudes?
+
+Por lo que usando un regresor de bosque aleatorio es posible dar una re![Untitled (3)](https://github.com/Cseudave/fifa21_cleaning/assets/123985830/a1c425e3-4634-4eb1-a5d8-1f30b15fe5d2)
+spuesta aproximada
+
