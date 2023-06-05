@@ -1,0 +1,309 @@
+Columna,Tipo,Elementos únicos,n_nulls,ejemplos,Anotaciones
+photoUrl,object,18978,0,"0    https://cdn.sofifa.com/players/158/023/21_60.png
+1    https://cdn.sofifa.com/players/020/801/21_60.png
+2    https://cdn.sofifa.com/players/200/389/21_60.png
+Name: photoUrl, dtype: object",Revisar patrón. Revisar repetición.
+LongName,object,18851,0,"0                    Lionel Messi
+1    C. Ronaldo dos Santos Aveiro
+2                       Jan Oblak
+Name: LongName, dtype: object",Revisar duplicados. Agregar nombre completo.
+playerUrl,object,18978,0,"0    http://sofifa.com/player/158023/lionel-messi/2...
+1    http://sofifa.com/player/20801/c-ronaldo-dos-s...
+2    http://sofifa.com/player/200389/jan-oblak/210005/
+Name: playerUrl, dtype: object",Revisar patrón. Revisar duplicado.
+Nationality,object,164,0,"0    Argentina
+1     Portugal
+2     Slovenia
+Name: Nationality, dtype: object",OK
+Positions,object,640,0,"0    RW ST CF
+1       ST LW
+2          GK
+Name: Positions, dtype: object","Tomar posición principal. Generalizar posición,"
+Name,object,17919,0,"0             L. Messi
+1    Cristiano Ronaldo
+2             J. Oblak
+Name: Name, dtype: object",Agregar nombre completo. Revisar duplicados.
+Age,int64,29,0,"0    33
+1    35
+2    27
+Name: Age, dtype: int64",Revisar todos los diferentes. No creo que el rango de edades sea de 29.
+↓OVA,int64,47,0,"0    93
+1    92
+2    91
+Name: ↓OVA, dtype: int64",Cambiar nombre de la columna
+POT,int64,48,0,"0    93
+1    92
+2    93
+Name: POT, dtype: int64",OK
+Team & Contract,object,9023,0,"0       \n\n\n\nFC Barcelona\n2004 ~ 2021\n\n
+1           \n\n\n\nJuventus\n2018 ~ 2022\n\n
+2    \n\n\n\nAtlético Madrid\n2014 ~ 2023\n\n
+Name: Team & Contract, dtype: object",Eliminar carácteres inecesarios. Convertir a tipo Date. Separar equipo.
+ID,int64,18978,0,"0    158023
+1     20801
+2    200389
+Name: ID, dtype: int64",OK
+Height,object,21,0,"0    5'7""
+1    6'2""
+2    6'2""
+Name: Height, dtype: object",Convertir a int que representen cm
+Weight,object,56,0,"0    159lbs
+1    183lbs
+2    192lbs
+Name: Weight, dtype: object",Convertir a float que representen kg
+foot,object,2,0,"0     Left
+1    Right
+2    Right
+Name: foot, dtype: object",OK
+BOV,int64,46,0,"0    93
+1    92
+2    91
+Name: BOV, dtype: int64",OK
+BP,object,15,0,"0    RW
+1    ST
+2    GK
+Name: BP, dtype: object",OK
+Growth,int64,27,0,"0    0
+1    0
+2    2
+Name: Growth, dtype: int64",Revisar categorías
+Joined,object,1869,0,"0     Jul 1, 2004
+1    Jul 10, 2018
+2    Jul 16, 2014
+Name: Joined, dtype: object",Convertir a tipo Date
+Loan Date End,object,25,17966,"0    NaN
+1    NaN
+2    NaN
+Name: Loan Date End, dtype: object",Traducir NaN a algo más apropiado
+Value,object,214,0,"0    €67.5M
+1      €46M
+2      €75M
+Name: Value, dtype: object",Convertir a Int que representen euros
+Wage,object,141,0,"0    €560K
+1    €220K
+2    €125K
+Name: Wage, dtype: object",Convertir a Int que representen euros
+Release Clause,object,1216,0,"0    €138.4M
+1     €75.9M
+2    €159.4M
+Name: Release Clause, dtype: object",Convertir a Int que representen euros
+Attacking,int64,367,0,"0    429
+1    437
+2     95
+Name: Attacking, dtype: int64",Revisar si pueden exceder 100
+Crossing,int64,89,0,"0    85
+1    84
+2    13
+Name: Crossing, dtype: int64",Revisar interpretación
+Finishing,int64,93,0,"0    95
+1    95
+2    11
+Name: Finishing, dtype: int64",OK
+Heading Accuracy,int64,89,0,"0    70
+1    90
+2    15
+Name: Heading Accuracy, dtype: int64",OK
+Short Passing,int64,86,0,"0    91
+1    82
+2    43
+Name: Short Passing, dtype: int64",OK
+Volleys,int64,88,0,"0    88
+1    86
+2    13
+Name: Volleys, dtype: int64",OK
+Skill,int64,393,0,"0    470
+1    414
+2    109
+Name: Skill, dtype: int64",Revisar interpretación
+Dribbling,int64,91,0,"0    96
+1    88
+2    12
+Name: Dribbling, dtype: int64",OK
+Curve,int64,91,0,"0    93
+1    81
+2    13
+Name: Curve, dtype: int64",OK
+FK Accuracy,int64,90,0,"0    94
+1    76
+2    14
+Name: FK Accuracy, dtype: int64",OK
+Long Passing,int64,86,0,"0    91
+1    77
+2    40
+Name: Long Passing, dtype: int64",OK
+Ball Control,int64,91,0,"0    96
+1    92
+2    30
+Name: Ball Control, dtype: int64",OK
+Movement,int64,331,0,"0    451
+1    431
+2    307
+Name: Movement, dtype: int64",OK
+Acceleration,int64,85,0,"0    91
+1    87
+2    43
+Name: Acceleration, dtype: int64",OK
+Sprint Speed,int64,84,0,"0    80
+1    91
+2    60
+Name: Sprint Speed, dtype: int64",OK
+Agility,int64,81,0,"0    91
+1    87
+2    67
+Name: Agility, dtype: int64",OK
+Reactions,int64,69,0,"0    94
+1    95
+2    88
+Name: Reactions, dtype: int64",OK
+Balance,int64,82,0,"0    95
+1    71
+2    49
+Name: Balance, dtype: int64",OK
+Power,int64,288,0,"0    389
+1    444
+2    268
+Name: Power, dtype: int64",OK
+Shot Power,int64,76,0,"0    86
+1    94
+2    59
+Name: Shot Power, dtype: int64",OK
+Jumping,int64,75,0,"0    68
+1    95
+2    78
+Name: Jumping, dtype: int64",OK
+Stamina,int64,85,0,"0    72
+1    84
+2    41
+Name: Stamina, dtype: int64",OK
+Strength,int64,77,0,"0    69
+1    78
+2    78
+Name: Strength, dtype: int64",OK
+Long Shots,int64,91,0,"0    94
+1    93
+2    12
+Name: Long Shots, dtype: int64",OK
+Mentality,int64,351,0,"0    347
+1    353
+2    140
+Name: Mentality, dtype: int64",OK
+Aggression,int64,88,0,"0    44
+1    63
+2    34
+Name: Aggression, dtype: int64",OK
+Interceptions,int64,89,0,"0    40
+1    29
+2    19
+Name: Interceptions, dtype: int64",OK
+Positioning,int64,94,0,"0    93
+1    95
+2    11
+Name: Positioning, dtype: int64",OK
+Vision,int64,86,0,"0    95
+1    82
+2    65
+Name: Vision, dtype: int64",OK
+Penalties,int64,87,0,"0    75
+1    84
+2    11
+Name: Penalties, dtype: int64",OK
+Composure,int64,85,0,"0    96
+1    95
+2    68
+Name: Composure, dtype: int64",OK
+Defending,int64,247,0,"0    91
+1    84
+2    57
+Name: Defending, dtype: int64",OK
+Marking,int64,92,0,"0    32
+1    28
+2    27
+Name: Marking, dtype: int64",OK
+Standing Tackle,int64,87,0,"0    35
+1    32
+2    12
+Name: Standing Tackle, dtype: int64",OK
+Sliding Tackle,int64,85,0,"0    24
+1    24
+2    18
+Name: Sliding Tackle, dtype: int64",OK
+Goalkeeping,int64,259,0,"0     54
+1     58
+2    437
+Name: Goalkeeping, dtype: int64",OK
+GK Diving,int64,69,0,"0     6
+1     7
+2    87
+Name: GK Diving, dtype: int64",OK
+GK Handling,int64,70,0,"0    11
+1    11
+2    92
+Name: GK Handling, dtype: int64",OK
+GK Kicking,int64,79,0,"0    15
+1    15
+2    78
+Name: GK Kicking, dtype: int64",OK
+GK Positioning,int64,76,0,"0    14
+1    14
+2    90
+Name: GK Positioning, dtype: int64",OK
+GK Reflexes,int64,70,0,"0     8
+1    11
+2    90
+Name: GK Reflexes, dtype: int64",OK
+Total Stats,int64,1420,0,"0    2231
+1    2221
+2    1413
+Name: Total Stats, dtype: int64",OK
+Base Stats,int64,250,0,"0    466
+1    464
+2    489
+Name: Base Stats, dtype: int64",OK
+W/F,object,5,0,"0    4 ★
+1    4 ★
+2    3 ★
+Name: W/F, dtype: object",Convertir a Int
+SM,object,5,0,"0    4★
+1    5★
+2    1★
+Name: SM, dtype: object",Convertir a Int
+A/W,object,3,0,"0    Medium
+1      High
+2    Medium
+Name: A/W, dtype: object",OK
+D/W,object,3,0,"0       Low
+1       Low
+2    Medium
+Name: D/W, dtype: object",OK
+IR,object,5,0,"0    5 ★
+1    5 ★
+2    3 ★
+Name: IR, dtype: object",Convertir a Int
+PAC,int64,70,0,"0    85
+1    89
+2    87
+Name: PAC, dtype: int64",OK
+SHO,int64,78,0,"0    92
+1    93
+2    92
+Name: SHO, dtype: int64",OK
+PAS,int64,68,0,"0    91
+1    81
+2    78
+Name: PAS, dtype: int64",OK
+DRI,int64,69,0,"0    95
+1    89
+2    90
+Name: DRI, dtype: int64",OK
+DEF,int64,78,0,"0    38
+1    35
+2    52
+Name: DEF, dtype: int64",OK
+PHY,int64,63,0,"0    65
+1    77
+2    90
+Name: PHY, dtype: int64",OK
+Hits,object,408,0,"0    \n372
+1    \n344
+2     \n86
+Name: Hits, dtype: object",Convertir a Int
